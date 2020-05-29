@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPF_Info.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Info"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="359.859" Width="499.578">
+    <Grid>
+        <local:Info Width="Auto" Height="Auto" TrueName="Илья"  TrueSurame="Сидорин"  TrueAge="19 лет" TrueCompany="СибГУТИ" TrueImg="Resources/1.jpg" BorderBrush="Black" BorderThickness="10" Margin="10"/>
+
+    </Grid>
+</Window>

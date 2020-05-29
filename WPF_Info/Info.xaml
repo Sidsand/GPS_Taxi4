@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="WPF_Info.Info"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Info"
+             mc:Ignorable="d" 
+             d:DesignHeight="280" Width="440">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF949FFF" Offset="1"/>
+                <GradientStop Color="White"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock x:Name="FName" Margin="5,30,5,10" FontSize="14" FontWeight="Bold" FontFamily="Microsoft YaHei UI"/>
+            <TextBlock x:Name="FSurname" Margin="5,0,5,10" FontSize="14" FontWeight="Bold" FontFamily="Microsoft YaHei UI"/>
+            <TextBlock x:Name="FAge" Margin="5,30,5,10" FontSize="14" FontFamily="Microsoft YaHei UI"/>
+            <TextBlock x:Name="FCompany" Margin="5,0,5,10" FontSize="14" FontFamily="Microsoft YaHei UI"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <Image x:Name="ImgX" Margin="20" Height="199"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="40">
+                <Button x:Name="Call" Content="Позвонить" Margin="5,2,15,2" ToolTip="Позвонить сотруднику" Width="80" Background="White" Foreground="#FF1700FF" FontWeight="Bold"/>
+                <Button x:Name="Write" Content="Написать" Margin="5,2,15,2" ToolTip="Написать сотруднику" Width="80" Background="White" Foreground="#FF1700FF" FontWeight="Bold"/>
+                <Button x:Name="Add" Content="Добавить" Margin="5,2,5,2" ToolTip="Добавить в событие" Width="80" Background="White" Foreground="#FF1700FF" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
